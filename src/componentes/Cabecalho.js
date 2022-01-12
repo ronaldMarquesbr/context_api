@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ContadorContexto } from './ContadorContexto';
 
 function Cabecalho(props){
+
+    const [contagem, setContagem] = useContext(ContadorContexto);
 
     return(
 
@@ -8,7 +11,7 @@ function Cabecalho(props){
 
             <h2>Contador</h2>
 
-            <h2>0</h2>
+            <h2>{contagem}</h2>
 
         </div>
 

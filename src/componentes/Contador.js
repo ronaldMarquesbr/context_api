@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
+import {ContadorContexto} from './ContadorContexto'
 
 function Contador(props){
 
-    const [contagem, setContagem] = useState(0);
+    const [contagem, setContagem] = useContext(ContadorContexto)
 
     return(
 
